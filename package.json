@@ -1,0 +1,29 @@
+{
+  "name": "fqdn",
+  "version": "0.0.1",
+  "description": "utility to get fqdn of machine",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opentable/fqdn-nodejs"
+  },
+  "keywords": [
+    "fqdn"
+  ],
+  "author": "Andy Royle <ajroyle@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/fqdn-nodejs/issues"
+  },
+  "homepage": "https://github.com/opentable/fqdn-nodejs",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.11.0",
+    "should": "^4.0.4"
+  }
+}
