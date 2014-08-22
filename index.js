@@ -1,17 +1,12 @@
-var exec = require("child_process").exec,
-    execSync = require("exec-sync");
+var shell = require("shelljs");
 
 module.exports = function(callback){
-    if(callback){
-      exec("hostname -f", function(error, stdout, stderr){
-          if(error || stderr){
-              callback(error || stderr);
-          }
+  var cb = callback ? function(code, output){
+    if(code !== 0){
+      callback(new Error("command exited with code: " + code + " output: " + output));
+    }
+    callback(null, output.trim());
+  } : undefined;
 
-          callback(null, stdout);
-      });
-    }
-    else {
-      return execSync("hostname -f");
-    }
+  return shell.exec("hostname -f", { silent: true }, cb);
 };

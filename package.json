@@ -27,6 +27,6 @@
     "should": "^4.0.4"
   },
   "dependencies": {
-    "exec-sync": "^0.1.6"
+    "shelljs": "^0.3.0"
   }
 }
