@@ -8,5 +8,10 @@ module.exports = function(callback){
     callback(null, output.trim());
   } : undefined;
 
-  return shell.exec("hostname -f", { silent: true }, cb);
+  if(cb){
+    shell.exec("hostname -f", { silent: true }, cb)
+  }
+  else {
+    return shell.exec("hostname -f", { silent: true }).output.trim();
+  }
 };

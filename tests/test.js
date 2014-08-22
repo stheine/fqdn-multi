@@ -13,7 +13,7 @@ describe('fqdn', function(){
 
   describe('sync', function(){
     it('should return the fqdn', function(done){
-      should.exist(fqdn().output);
+      should.exist(fqdn());
       done();
     });
   });

@@ -1,6 +1,6 @@
 {
   "name": "fqdn",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "utility to get fqdn of machine",
   "main": "index.js",
   "scripts": {
