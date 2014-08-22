@@ -1,7 +1,7 @@
 FQDN
 ---
 
-Simple utility to get the FQDN of a machine.
+Simple utility to get the FQDN of a machine. Can be used synchronously or asynchronously
 
 ___Why?:___ os.hostname() *only* returns the hostname rather than the FQDN
 
@@ -16,6 +16,11 @@ fqdn(function(err, res){
 
   console.log(res);
 });
+
+/* OR */
+
+var dn = fqdn();
+
 ```
 
 ___Works on Linux and MacOS___
