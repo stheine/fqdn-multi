@@ -12,6 +12,6 @@ module.exports = function(callback){
     shell.exec("hostname -f", { silent: true }, cb)
   }
   else {
-    return shell.exec("hostname -f", { silent: true }).output.trim();
+    return shell.exec("hostname -f", { silent: true }).stdout.trim();
   }
 };

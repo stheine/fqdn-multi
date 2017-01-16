@@ -1,11 +1,11 @@
 var fqdn = require("../index"),
-    should = require("should");
+    assert = require("assert");
 
 describe('fqdn', function(){
   describe('async', function(){
     it('should return the fqdn', function(done){
       fqdn(function(err, res){
-        should.exist(res);
+        assert(res);
         done(err);
       });
     });
@@ -13,7 +13,7 @@ describe('fqdn', function(){
 
   describe('sync', function(){
     it('should return the fqdn', function(done){
-      should.exist(fqdn());
+      assert(fqdn());
       done();
     });
   });
