@@ -1,32 +1,29 @@
 {
-  "name": "fqdn",
+  "name": "fqdn-multi",
   "version": "0.0.4",
-  "description": "utility to get fqdn of machine",
-  "main": "index.js",
+  "description": "Get fqdn of machine. Multiplatform (Win & UX).",
+  "main": "lib/fqdn.js",
   "scripts": {
-    "test": "grunt"
+    "test": "bot test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/opentable/fqdn-nodejs"
+    "url": "https://github.com/stheine/fqdn-multi"
   },
   "keywords": [
     "fqdn"
   ],
-  "author": "Andy Royle <ajroyle@gmail.com>",
+  "author": "Stefan Heine <stefan@heine7.de>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/opentable/fqdn-nodejs/issues"
-  },
-  "homepage": "https://github.com/opentable/fqdn-nodejs",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-mocha-test": "^0.12.7",
-    "mocha": "^2.5.3"
-  },
+  "homepage": "https://github.com/stheine/fqdn-multi",
   "dependencies": {
-    "shelljs": "^0.7.0"
+    "shelljs": "0.7.6"
+  },
+  "devDependencies": {
+    "assertthat": "0.8.3",
+    "eslint": "3.15.0",
+    "eslint-config-es": "0.8.10",
+    "roboter": "0.14.4",
+    "roboter-server": "0.14.4"
   }
 }
