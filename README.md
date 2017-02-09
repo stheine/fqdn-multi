@@ -2,6 +2,13 @@
 
 <!-- toc -->
 
+- [Purpose](#purpose)
+- [Usage](#usage)
+- [OS Support](#os-support)
+- [Reference](#reference)
+
+<!-- tocstop -->
+
 ## Purpose
 
 Simple utility to get the FQDN of a machine. Can be used synchronously or asynchronously

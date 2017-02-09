@@ -1,6 +1,6 @@
 {
   "name": "fqdn-multi",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Get fqdn of machine. Multiplatform (Win & UX).",
   "main": "lib/fqdn.js",
   "scripts": {
