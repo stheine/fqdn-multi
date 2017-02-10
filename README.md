@@ -1,4 +1,4 @@
-# stheine/fqdn
+# fqdn-multi
 
 <!-- toc -->
 
@@ -18,7 +18,7 @@ ___Why?:___ os.hostname() *only* returns the hostname rather than the FQDN
 ## Usage
 
 ```javascript
-const fqdn = require('fqdn');
+const fqdn = require('fqdn-multi');
 
 // Async
 fqdn((err, name) => {
