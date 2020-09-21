@@ -2,10 +2,10 @@
 
 <!-- toc -->
 
-- [Purpose](#purpose)
-- [Usage](#usage)
-- [OS Support](#os-support)
-- [Reference](#reference)
+-   [Purpose](#purpose)
+-   [Usage](#usage)
+-   [OS Support](#os-support)
+-   [Reference](#reference)
 
 <!-- tocstop -->
 
@@ -13,7 +13,7 @@
 
 Simple utility to get the FQDN of a machine. Can be used synchronously or asynchronously
 
-___Why?:___ os.hostname() *only* returns the hostname rather than the FQDN
+**_Why?:_** os.hostname() _only_ returns the hostname rather than the FQDN
 
 ## Usage
 
@@ -37,7 +37,7 @@ const name = fqdn();
 
 ## OS Support
 
-___Works on Windows, Linux and MacOS___
+**_Works on Windows, Linux and MacOS_**
 
 ## Reference
 
