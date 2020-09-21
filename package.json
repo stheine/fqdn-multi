@@ -17,12 +17,12 @@
   "license": "MIT",
   "homepage": "https://github.com/stheine/fqdn-multi",
   "dependencies": {
-    "shelljs": "0.7.6"
+    "shelljs": "0.8.4"
   },
   "devDependencies": {
-    "assertthat": "0.8.3",
-    "eslint": "3.15.0",
-    "eslint-config-es": "0.8.10",
+    "check-types-2": "11.3.0",
+    "eslint": "7.9.0",
+    "eslint-config-es": "3.22.0",
     "roboter": "0.14.4",
     "roboter-server": "0.14.4"
   }

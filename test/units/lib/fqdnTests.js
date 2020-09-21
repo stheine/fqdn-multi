@@ -1,24 +1,25 @@
 'use strict';
 
-const fqdn   = require('../../../lib/fqdn');
-const assert = require('assertthat');
+const check = require('check-types-2');
+
+const fqdn  = require('../../../lib/fqdn');
 
 suite('fqdn', () => {
   test('is a function', done => {
-    assert.that(fqdn).is.ofType('function');
+    check.assert.function(fqdn);
     done();
   });
 
   test('async', done => {
     fqdn((err, res) => {
-      assert.that(err).is.null();
-      assert.that(res).is.not.undefined();
+      check.assert.null(err);
+      check.assert.not.undefined(res);
       done();
     });
   });
 
   test('sync', done => {
-    assert.that(fqdn()).is.not.undefined();
+    check.assert.not.undefined(fqdn());
     done();
   });
 });
