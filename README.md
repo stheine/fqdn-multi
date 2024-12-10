@@ -6,6 +6,7 @@
 -   [Usage](#usage)
 -   [OS Support](#os-support)
 -   [Reference](#reference)
+-   [Breaking](#breaking)
 
 <!-- tocstop -->
 
@@ -18,21 +19,11 @@ Simple utility to get the FQDN of a machine. Can be used synchronously or asynch
 ## Usage
 
 ```javascript
-const fqdn = require('fqdn-multi');
+import fqdn from 'fqdn-multi';
 
-// Async
-fqdn((err, name) => {
-  if(err) {
-    throw err;
-  }
+const name = await fqdn();
 
-  console.log(name);
-});
-
-/* OR */
-
-// Sync
-const name = fqdn();
+console.log(name);
 ```
 
 ## OS Support
@@ -42,3 +33,9 @@ const name = fqdn();
 ## Reference
 
 This code is based on the [original code](https://github.com/opentable/fqdn-nodejs).
+
+## Breaking
+
+### 1.x
+
+The module is ESM Module style and uses `async`/ `await`.

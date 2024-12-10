@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 
-'use strict';
-
 /* eslint-disable no-console */
-/* eslint-disable no-process-exit */
 
-const fqdn = require('../lib/fqdn');
+import fqdn from '../lib/fqdn.js';
 
-console.log('fqdn(), sync:', fqdn());
+const name = await fqdn();
 
-fqdn((err, name) => {
-  if(err) {
-    console.error(err);
-    process.exit(1);
-  }
-
-  console.log('fqdn(), async:', name);
-});
+console.log('fqdn():', name);
